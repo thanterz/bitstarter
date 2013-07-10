@@ -8,7 +8,7 @@ var data = fs.readFilesync(readfile);
 buf = new Buffer(data);
  
 app.get('/', function(request, response) {
-  response.send(buf);
+  response.send('buf');
 });
 
 var port = process.env.PORT || 5000;
